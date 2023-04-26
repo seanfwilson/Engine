@@ -96,7 +96,7 @@ static VkPhysicalDevice SetupVulkan_SelectPhysicalDevice()
     {
         VkPhysicalDeviceProperties properties;
         vkGetPhysicalDeviceProperties(device, &properties);
-        if (properties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU)
+        //if (properties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU)
             return device;
     }
     return VK_NULL_HANDLE;
